@@ -6,8 +6,72 @@
     <title>Document</title>
 </head>
 <body>
- <form>
 
- </form> 
+<fieldset>
+    <legend>HTML form</legend>
+    <form  method="POST" autocomplete="on">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+<label for="radio">Choose:</label>
+<input type="radio" name="radio" id="female">
+<label for="female">Female</label>
+<input type="radio" name="radio"  value="female" id="male">
+<label for="male">Male</label>
+<input type="radio" name="radio" id="other">
+<label for="other">Other</label>   <br><br>
+<label>Select:</label>
+<input type="checkbox" name="hobby" id="h1">
+<label for="h1">Travel</label>
+<input type="checkbox" name="hobby" id="h2">
+<label for="h2">Read</label>
+<br>
+<br>
+<select id="state" name="state" size="2" multiple>
+    <option value="maharashtra">Maharashtra</option>
+    <option value="MP" selected>MP</option>
+    <option value="guj">Gujrat</option>
+    <option value="UP">UP</option>
+</select>
+<br><br>
+<textarea id="txa" style="width: 20;height: 30;" placeholder="Enter Address"></textarea>
+<br><br>
+<textarea id="ta" name="msg" cols="20" rows="10">I am Swapnali.</textarea>
+<br><br>
+<label for="count">Enter country:</label>
+<input list="country" id="count" name=""country>
+<datalist id="country">
+   <option value="India"></option>
+   <option value="Australia"></option>
+   <option value="Japan"></option>
+</datalist>
+<br><br>
+<label for="rng">Select the element:</label>
+<input type="range" min="1" max="6" id="rng" value="range" step="2">
+<br><br>
+<label for="sele">Select digit:</label>
+<input type="number" min="1" max="8" id="sele"
+<br><br>
+<label for="col">Color</label>
+<input type="color" id="col">
+<br><br>
+<input type="date" min="1980-01-01" max="2028-01-01"
+<br><br>
+<input type="image" src="saree3.jpg" alt=" " width="48" height="48" autofocus>
+<br><br>
+<input type="file"><br><br>
+<input type="hidden" id="custId" name="custId" value="3487"><br><br>
+<br><input type="submit" value="Submit"> 
+<br><br>
+<input type="month" id="mon" readonly>
+<br><br>
+search:<input type="search" disabled>
+<br><br>
+<button type="button" onclick="alert('hello')">Click</button>
+
+    </form>
+</fieldset>
+
 </body>
 </html>
